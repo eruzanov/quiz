@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="quiz" ng-strict-di>
+    <head>
+        <title>Quiz</title>
+        <meta
+            name="viewport"
+            content="initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body ng-controller="main" ng-cloak>
+        <md-sidenav
+            class="md-sidenav-left"
+            md-component-id="left"
+            md-whiteframe="4"
+        >
+            <md-toolbar class="md-theme-indigo">
+                <h1 class="md-toolbar-tools">Quiz</h1>
+            </md-toolbar>
+
+            <md-content layout-margin>
+            	
+            </md-content>
+        </md-sidenav>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 class="md-flex" ng-click="toggleSideNav()">Quiz</h2>
+            </div>
+        </md-toolbar>
+        <md-content layout-margin>
+        	
+        </md-content>
+        <script src="app.js"></script>
+    </body>
+</html>
