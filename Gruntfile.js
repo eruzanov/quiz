@@ -1,14 +1,14 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
-            files: 'src/**/*.js',
+            files: 'src/**/*',
             tasks: 'concat'
         },
         concat: {
-            options: {
-                separator: ';\n'
-            },
             app: {
+                options: {
+                    separator: ';\n'
+                },
                 files: {
                     'app.js': [
                         'node_modules/angular/angular.js',
@@ -21,8 +21,14 @@ module.exports = function(grunt) {
                 }
             },
             styles: {
+                options: {
+                    separator: '\n\n'
+                },
                 files: {
-                    'style.css': ['node_modules/angular-material/angular-material.css']
+                    'style.css': [
+                        'node_modules/angular-material/angular-material.css',
+                        'src/**/*.css'
+                    ]
                 }
             }
         },
