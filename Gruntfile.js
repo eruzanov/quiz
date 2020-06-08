@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                     separator: ';\n'
                 },
                 files: {
-                    'app.js': [
+                    'build/app.js': [
                         'node_modules/angular/angular.js',
                         'node_modules/angular-animate/angular-animate.js',
                         'node_modules/angular-aria/angular-aria.js',
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
                     separator: '\n\n'
                 },
                 files: {
-                    'style.css': [
+                    'build/styles.css': [
                         'node_modules/angular-material/angular-material.css',
                         'src/**/*.css'
                     ]
